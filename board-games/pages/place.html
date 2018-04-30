@@ -63,15 +63,55 @@ Licence URI: http://www.os-templates.com/template-terms
 	
 	<!-- Search results page - TODO! -->
 	<div class="wrapper">
-	  <div id="topbar" class="clear"> 
-		<div class="fl_left">
-		    <article id="main-page">
-				<h6>This is the search results page.</h6> 
-				TODO: map with points representing bars, filtering the map.
-			</article>
-		</div>
-	  </div>
+	  <main class="container clear"> 
+		<div class="content" id="place"> 
+			<div class="block" id="place-stars">
+				Place name 
+				<!-- Star rating -->
+				<div class="stars">
+				  <form action="">
+					<input class="star star-5" id="star-5" type="radio" name="star"/>
+					<label class="star star-5" for="star-5"></label>
+					<input class="star star-4" id="star-4" type="radio" name="star"/>
+					<label class="star star-4" for="star-4"></label>
+					<input class="star star-3" id="star-3" type="radio" name="star"/>
+					<label class="star star-3" for="star-3"></label>
+					<input class="star star-2" id="star-2" type="radio" name="star"/>
+					<label class="star star-2" for="star-2"></label>
+					<input class="star star-1" id="star-1" type="radio" name="star"/>
+					<label class="star star-1" for="star-1"></label>
+				  </form>
+				</div>
+				<br><br>
+			</div>
+			<div class="one_third first" id="place-logo">
+				<img src="../img/icon.png" alt="Place logo">
+			</div>
+			<div class="two_third" id="place-info">
+				<h2>Basic information:<h2>
+				<p>
+				Company Name<br>
+				Street Name &amp; Number<br>
+				Town<br>
+				Opening hours: <br>
+				Opinions: <br> <br>
+				<div class="place-buttons">
+					<form action="reservation.html">
+						<input type="submit" value="Reservation" />
+					</form>
+					<form action="add-opinion.html">
+						<input type="submit" value="Add opinion" />
+					</form>
+				</div>
+				</p>
+			</div>
+			<div class="block" id="place-games">
+				TODO: Games database
+			</div>
+		</div
+	  </main>
 	</div>
+	
 	
 	<!-- Footer - Contact info --> 
 	<div class="wrapper row5 bgded" style="background-image:url('../img/background1.png');">

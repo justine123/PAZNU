@@ -9,7 +9,6 @@ Authors: Justyna Handzlik, Marcin Soja
 
 /* Main page */
 #main-page{padding:120px 0;}
-
 #main-page article{}
 #main-page article .heading{display:block; position:relative; padding-bottom:15px;}
 #main-page article .heading::after{display:block; position:absolute; bottom:0; left:50%; margin-left:-5%; width:10%; height:2px; content:"";}
@@ -52,3 +51,6 @@ label.star:before {
   content: '\f006';
   font-family: FontAwesome;
 }
+
+/* Place page */
+#place-stars {font-size:35px;}
