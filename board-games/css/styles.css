@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*
+Authors: Justyna Handzlik, Marcin Soja
+*/
+
+@import url("fontawesome-4.2.0.min.css");
+@import url("framework.css");
+
+
+/* Main page */
+#main{padding:120px 0;}
+
+#main article{}
+#main article .heading{display:block; position:relative; padding-bottom:15px;}
+#main article .heading::after{display:block; position:absolute; bottom:0; left:50%; margin-left:-5%; width:10%; height:2px; content:"";}
+#main article i{display:inline-block; width:100px; height:100px; line-height:100px; margin-bottom:30px; border-radius:50%; font-size:32px;}
+#main article .btn{}
