@@ -61,17 +61,27 @@ Licence URI: http://www.os-templates.com/template-terms
 	  </header>
 	</div>
 	
-	<!-- Search results page - TODO! -->
-	<div class="wrapper">
-	  <div id="topbar" class="clear"> 
-		<div class="fl_left">
-		    <article id="main-page">
-				<h6>This is the search results page.</h6> 
-				TODO: map with points representing bars, filtering the map.
-			</article>
-		</div>
-	  </div>
-	</div>
+	<!-- Login and registration page - TODO! -->
+	<section class="container">
+    <div class="login">
+      <h1>Login to Web App</h1>
+      <form method="post" action="index.html">
+        <p><input type="text" name="login" value="" placeholder="Username or Email"></p>
+        <p><input type="password" name="password" value="" placeholder="Password"></p>
+        <p class="remember_me">
+          <label>
+            <input type="checkbox" name="remember_me" id="remember_me">
+            Remember me on this computer
+          </label>
+        </p>
+        <p class="submit"><input type="submit" name="commit" value="Login"></p>
+      </form>
+    </div>
+
+    <div class="login-help">
+      <p>Forgot your password? <a href="index.html">Click here to reset it</a>.</p>
+    </div>
+  </section>
 	
 	<!-- Footer - Contact info --> 
 	<div class="wrapper row5 bgded" style="background-image:url('../img/background1.png');">

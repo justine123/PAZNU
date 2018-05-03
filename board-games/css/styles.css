@@ -52,5 +52,11 @@ label.star:before {
   font-family: FontAwesome;
 }
 
+
 /* Place page */
 #place-stars {font-size:35px;}
+
+
+/* Search results page */
+.pagination a {background-color:#FFFFFF;}
+.pagination .dots {background-color:#FFFFFF;}
