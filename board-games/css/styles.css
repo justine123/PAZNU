@@ -60,3 +60,10 @@ label.star:before {
 /* Search results page */
 .pagination a {background-color:#FFFFFF;}
 .pagination .dots {background-color:#FFFFFF;}
+
+
+/* Login & registration page */
+
+#login, #registration {
+	background-color: #EAEAEA;
+}
