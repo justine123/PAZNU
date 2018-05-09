@@ -6,7 +6,6 @@ Authors: Justyna Handzlik, Marcin Soja
 @import url("fontawesome-4.2.0.min.css");
 @import url("framework.css");
 
-
 /* Main page */
 #main-page{padding:120px 0;}
 #main-page article{}
@@ -21,7 +20,6 @@ Authors: Justyna Handzlik, Marcin Soja
 #main-page input, #main-page button{border:none; border-radius:8px;}
 #main-page input{display:block; width:100%; padding:8px;}
 #main-page button{padding:6px 12px 8px; font-weight:bold; text-transform:uppercase; cursor:pointer;}
-
 
 /* Stars rating */
 div.stars {
@@ -52,18 +50,67 @@ label.star:before {
   font-family: FontAwesome;
 }
 
-
 /* Place page */
 #place-stars {font-size:35px;}
+.place-logo img {
+	border-radius: 8px;
+	max-width: 10%;
+    height: auto;
+}
+#button1, #button2 {display:inline-block;}
+#button1 a, #button2 a {color: #888888; font-size:20px;}
 
+/* Games database on place page */
+#search-database {
+  background-image: url('../img/search-icon.png');
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#games-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+#games-table th, #games-table td {
+  text-align: left;
+  padding: 12px;
+}
+#games-table tr {border-bottom: 1px solid #ddd;}
+#games-table tr.header, #games-table tr:hover {background-color: #f1f1f1;}
+#games-table a {color: #888888;}
 
 /* Search results page */
 .pagination a {background-color:#FFFFFF;}
 .pagination .dots {background-color:#FFFFFF;}
 
-
 /* Login & registration page */
-
 #login, #registration {
 	background-color: #EAEAEA;
+}
+
+/* Login & registration icon */
+.faicon-sign-in:hover{background-color:#00ACEE;}
+.faicon-sign-in .hidden-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #CC827D;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the hidden text */
+    position: absolute;
+    z-index: 20;
+	top: 2px;
+}
+.faicon-sign-in:hover .hidden-text {
+    visibility: visible;
 }
