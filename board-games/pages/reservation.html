@@ -49,7 +49,7 @@ Licence URI: http://www.os-templates.com/template-terms
 	<div class="wrapper row1">
 	  <header id="header" class="clear"> 
 		<div id="logo" class="fl_left">
-		  <h1><a href="../index.html">Board games application</a></h1>
+		  <h1><a href="index.html">Board games application</a></h1>
 		</div>
 		<div class="fl_right">
 		  <form class="clear" method="post" action="search-results.html">
@@ -64,16 +64,74 @@ Licence URI: http://www.os-templates.com/template-terms
 	</div>
 	
 	<!-- Search results page - TODO! -->
-	<div class="wrapper">
-	  <div id="topbar" class="clear"> 
-		<div class="fl_left">
-		    <article id="main-page">
-				<h6>This is the reservation page.</h6> 
-				TODO: form for reservation.
-			</article>
-		</div>
-	  </div>
-	</div>
+<div class="wrapper">
+		<main class="container clear"> 
+			<!-- Login -->
+				<div class="login">
+				<h1>Reservation</h1>
+					<form method="post" action="../index.html">
+						<fieldset class="form-group">
+						  <div class="one_third first">
+							<label for="id_username" class="col-sm-3 control-label">Name</label>
+							<div class="col-sm-8">
+								<input type="text" name="username" value="" size="30" id="id_username"/>
+							</div>
+						  </div>
+						  <div class="one_third">
+							<label for="id_username" class="col-sm-3 control-label">Surname</label>
+							<div class="col-sm-8">
+								<input type="text" name="username" value="" size="30" id="id_username"/>
+							</div>
+						  </div>
+						</fieldset>
+						<fieldset>
+						  <div class="one_third first">
+							<label for="id_password" class="col-sm-3 control-label">Number</label>
+							<div class="col-sm-4">
+								<input type="password" name="password" value="" size="30" id="id_password"/>
+							</div>
+						  </div>
+						  <div class="one_third">
+							<label for="id_password" class="col-sm-3 control-label">e-mail</label>
+							<div class="col-sm-4">
+								<input type="password" name="password" value="" size="30" id="id_password"/>
+							</div>
+						  </div>
+						</fieldset>
+						<fieldset>
+						  <div class="one_third first">
+			                </br>
+							<select name="nazwa">
+	                        <option>10-May-18</option>
+	                        <option selected="selected">11-May-18<option>
+                            </select>
+						  </div>
+						  <div class="one_third">
+						    <div class="one_third first">
+							  <label for="id_password" class="col-sm-3 control-label">Start time</label>
+							  <div class="col-sm-4">
+								  <input type="password" name="password" value="" size="10" id="id_password"/>
+							  </div>
+						    </div>
+						    <div class="one_third">
+							  <label for="id_password" class="col-sm-3 control-label">End time</label>
+							  <div class="col-sm-4">
+								  <input type="password" name="password" value="" size="10" id="id_password"/>
+							  </div>
+						    </div>							
+						  </div>
+						</fieldset>
+						<div class="col-sm-2">
+							<br />
+				            <button type="button add-opinion-button" id="button2"><a href="place.html">Send</a></button>
+						</div>
+					</form>
+				</div>
+
+
+		
+		</main>
+    </div>
 	
 	<!-- Footer - Contact info --> 
 	<div class="wrapper row5 bgded" style="background-image:url('../img/background1.png');">

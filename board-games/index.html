@@ -63,49 +63,32 @@ Licence URI: http://www.os-templates.com/template-terms
 	  </header>
 	</div>
 
-	<!-- Main page - TODO -->
+	<!-- Search results page - TODO! -->
 	<div class="wrapper">
-	  <div id="topbar" class="clear"> 
-		<div class="fl_left">
-		    <article id="main-page">
-				<h6>This is the main page.</h6> 
-				TODO: map with points representing bars, filtering the map.
-			</article>
-		</div>
-	  </div>
-	</div>
-	
-	<!-- Footer - Contact info --> 
-	<div class="wrapper row5 bgded" style="background-image:url('img/background1.png');">
-	  <div class="overlay">
-		<footer id="footer" class="clear"> 
+	  <main class="container clear"> 
+		<div class="content"> 
 		  <div class="one_half first">
-			<h6 class="title">Contact information:</h6>
-			<address class="btmspace-15">
-			Company Name<br>
-			Street Name &amp; Number<br>
-			Town<br>
-			Postcode/Zip
-			</address>
-			<ul class="nospace">
-			  <li class="btmspace-10"><span class="fa fa-phone"></span> +00 (123) 456 7890</li>
-			  <li><span class="fa fa-envelope-o"></span> info@domain.com</li>
-			</ul>
+		    <h2>Select a district:</h2>
+			  <select name="nazwa">
+	            <option>dzielnica 1</option>
+	            <option selected="selected">dzielnica 2<option>
+              </select>
+			<br>  
+			<h2>Type of the game:</h2>
+			  <form action="">
+				<input type="checkbox" name="vehicle" value="type1"> type 1<br>
+				<input type="checkbox" name="vehicle" value="type2" checked> type 2<br>
+				<input type="submit" value="Submit">
+			  </form>
 		  </div>
-			
 		  <div class="one_half">
-			<h6 class="title">Need more info? Contact us:</h6>
-			<form method="post" action="#">
-			  <fieldset>
-				<legend>Newsletter:</legend>
-				<input class="btmspace-15" type="text" value="" placeholder="Name">
-				<input class="btmspace-15" type="text" value="" placeholder="Email">
-				<button type="submit" value="submit">Submit</button>
-			  </fieldset>
-			</form>
+			<figure>
+			  <img src="/img/map.png" alt="" style="width:600px;height:320px;" >
+			</figure>
 		  </div>
-		</footer>
-	  </div>
+		</div>
+		<div class="clear"></div>
+	  </main>
 	</div>
 	
 	<!-- Footer - Copyright --> 

@@ -63,48 +63,31 @@ Licence URI: http://www.os-templates.com/template-terms
 	  </header>
 	</div>
 	
-	<!-- Add opinion page -->
+	<!-- Search results page - TODO! -->
 	<div class="wrapper">
 	  <main class="container clear"> 
 		<div class="content"> 
-			<div id="comments">
-				<h2>Write A Comment</h2>
-				<form action="#" method="post">
-					<div class="one_third first">
-					<label for="name">Name </label>
-					<input type="text" name="name" id="name" value="" size="22">
-					</div>
-					<div class="one_third">
-						<label for="email">Mail </label>
-						<input type="text" name="email" id="email" value="" size="22">
-					</div>
-					<div class="block clear">
-						<label for="comment">Your Comment</label>
-						<textarea name="comment" id="comment" cols="25" rows="10"></textarea>
-					</div>
-					<!-- Star rating -->
-					<div class="stars">
-					  <form action="">
-						<input class="star star-5" id="star-5" type="radio" name="star"/>
-						<label class="star star-5" for="star-5"></label>
-						<input class="star star-4" id="star-4" type="radio" name="star"/>
-						<label class="star star-4" for="star-4"></label>
-						<input class="star star-3" id="star-3" type="radio" name="star"/>
-						<label class="star star-3" for="star-3"></label>
-						<input class="star star-2" id="star-2" type="radio" name="star"/>
-						<label class="star star-2" for="star-2"></label>
-						<input class="star star-1" id="star-1" type="radio" name="star"/>
-						<label class="star star-1" for="star-1"></label>
-					  </form>
-					</div>
-					<div>
-						<button type="button add-opinion-button" id="button2"><a href="place.html">Submit</a></button>
-						
-						&nbsp;
-					</div>
-				</form>
+		  <div class="one_half first">
+		    <h2>Select a district:</h2>
+			  <select name="nazwa">
+	            <option>dzielnica 1</option>
+	            <option selected="selected">dzielnica 2<option>
+              </select>
+			<br>  
+			<h2>Type of the game:</h2>
+			  <form action="">
+				<input type="checkbox" name="vehicle" value="type1"> type 1<br>
+				<input type="checkbox" name="vehicle" value="type2" checked> type 2<br>
+				<input type="submit" value="Submit">
+			  </form>
+		  </div>
+		  <div class="one_half">
+			<figure>
+			  <img src="../img/map.png" alt="" style="width:600px;height:320px;" >
+			</figure>
 		  </div>
 		</div>
+		<div class="clear"></div>
 	  </main>
 	</div>
 	

@@ -49,7 +49,7 @@ Licence URI: http://www.os-templates.com/template-terms
 	<div class="wrapper row1">
 	  <header id="header" class="clear"> 
 		<div id="logo" class="fl_left">
-		  <h1><a href="../index.html">Board games application</a></h1>
+		  <h1><a href="index.html">Board games application</a></h1>
 		</div>
 		<div class="fl_right">
 		  <form class="clear" method="post" action="search-results.html">
@@ -63,17 +63,55 @@ Licence URI: http://www.os-templates.com/template-terms
 	  </header>
 	</div>
 	
-	<!-- Search results page - TODO! -->
+	<!-- Place info -->
 	<div class="wrapper">
-	  <div id="topbar" class="clear"> 
-		<div class="fl_left">
-		    <article id="main-page">
-				<h6>This is the game page.</h6> 
-				TODO: detailed info about the game, link to "add opinion"
-			</article>
+	  <main class="container clear"> 
+		<div class="content" id="place"> 
+			<div class="block" id="place-stars">
+				Game name 
+				<!-- Stars rating -->
+				<div class="stars">
+				  <form action="">
+					<input class="star star-5" id="star-5" type="radio" name="star"/>
+					<label class="star star-5" for="star-5"></label>
+					<input class="star star-4" id="star-4" type="radio" name="star"/>
+					<label class="star star-4" for="star-4"></label>
+					<input class="star star-3" id="star-3" type="radio" name="star"/>
+					<label class="star star-3" for="star-3"></label>
+					<input class="star star-2" id="star-2" type="radio" name="star"/>
+					<label class="star star-2" for="star-2"></label>
+					<input class="star star-1" id="star-1" type="radio" name="star"/>
+					<label class="star star-1" for="star-1"></label>
+				  </form>
+				</div>
+				<br><br>
+			</div>
+			<div class="one_half first" id="place-logo">
+				<img src="../img/icon.png" alt="Place logo" style="border-radius:8px; max-width:50%; height:auto;">
+			</div>
+			<div class="one_half" id="place-info">
+				<h2>Detailed information:</h2>
+				<article> 
+					<ul>
+						<li>game description</li>
+						<li>type</li>
+						<li>difficulty</li>
+						<li>number of players</li>	
+						<li>time for playing</li>
+						<li>time for initial learning the rules</li>
+						<li>indicator if the game is available in the shop</li>
+						<li>opinions</li>							
+					 </ul>
+					 <br/>
+				</article>
+				<button type="button add-opinion-button" id="button2"><a href="add-opinion.html">Add Opinion</a></button>
+				<button type="button add-opinion-button" id="button2"><a href="place.html">Go back to database</a></button>
+			</div>
 		</div>
-	  </div>
+	  </main>
 	</div>
+	
+	
 	
 	<!-- Footer - Contact info --> 
 	<div class="wrapper row5 bgded" style="background-image:url('../img/background1.png');">
