@@ -14,55 +14,63 @@ Licence URI: http://www.os-templates.com/template-terms
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title>Board games application</title>
-		<link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
-		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
-		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-		<link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../css/layout.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+		<link rel="shortcut icon" type="image/png" href="../img/icon.png"/>
 	</head>
 
 	<body id="top">
 	<!-- Top header, with links to social media pages -->
 	<div class="wrapper row0">
-	  <div id="topbar" class="clear"> 
-		<div class="fl_left">
-		  <ul class="nospace inline">
-			<li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-			<li><i class="fa fa-envelope-o"></i> info@domain.com</li>
-		  </ul>
+		<div id="topbar" class="clear">
+			<div class="row justify-content-center"> 
+				<div class="col-6">
+					<ul class="nospace inline">
+						<li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+						<li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+					</ul>
+				</div>
+				<div class="col-4">
+					<span class="pull-right"> <!-- right align the elements -->
+					<ul class="faico clear">
+						<li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="faicon-pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+						<li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a class="faicon-rss" href="#"><i class="fa fa-rss"></i></a></li>
+						<li><a class="faicon-sign-in" href="login.html"><i class="fa fa-sign-in"><span class="hidden-text">Log In | Sign Up</span></i></a></li>
+					</ul>
+					</span>
+				</div>
+			</div>
 		</div>
-		<div class="fl_right">
-		  <ul class="faico clear">
-			<li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-			<li><a class="faicon-pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-			<li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-			<li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
-			<li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-			<li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-			<li><a class="faicon-rss" href="#"><i class="fa fa-rss"></i></a></li>
-			<li><a class="faicon-sign-in" href="pages/login.html"><i class="fa fa-sign-in"><span class="hidden-text">Log In | Sign Up</span></i></a></li>
-		  </ul>
-		</div>
-	  </div>
 	</div>
 	
 	<!-- Logo + Search bar -->
 	<div class="wrapper row1">
-	  <header id="header" class="clear"> 
-		<div id="logo" class="fl_left">
-		  <h1><a href="index.html">Board games application</a></h1>
-		</div>
-		<div class="fl_right">
-		  <form class="clear" method="post" action="pages/search-results.html">
-			<fieldset>
-			  <legend>Search:</legend>
-			  <input type="text" value="" placeholder="Search Here">
-			  <button class="fa fa-search" type="submit" title="Search"><em>Search</em></button>
-			</fieldset>
-		  </form>
-		</div>
-	  </header>
+		<header id="header" class="clear"> 
+			<div class="row justify-content-center"> 
+				<div class="col-6" id="logo">
+					<h1><a href="index.html">Board games application</a></h1>
+				</div>
+				<div class="col-4">
+					<span class="pull-right"> <!-- right align the elements -->
+					<form class="clear" method="post" action="search-results.html">
+						<fieldset>
+							<legend>Search:</legend>
+							<input type="text" value="" placeholder="Search Here">
+							<button class="fa fa-search" type="submit" title="Search"><em>Search</em></button>
+						</fieldset>
+					</form>
+					</span>
+				</div>
+			</div>
+		</header>
 	</div>
-
+	
 	<!-- Search results page - TODO! -->
 	<div class="wrapper">
 	  <main class="container clear"> 
@@ -93,15 +101,23 @@ Licence URI: http://www.os-templates.com/template-terms
 	
 	<!-- Footer - Copyright --> 
 	<div class="wrapper row6">
-	  <div id="copyright" class="clear"> 
-		<p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">Domain Name</a></p>
-		<p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-	  </div>
+		<div id="copyright" class="clear">
+			<div class="row justify-content-center"> 
+				<div class="col-6">
+					<p>Copyright &copy; 2015 - All Rights Reserved - <a href="#">Domain Name</a></p>
+				</div>
+				<div class="col-4">
+					<span class="pull-right"> <!-- right align the elements --> 
+						<p>Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+					</span>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Javascripts -->
-	<script src="js/jquery.min.js"></script> 
-	<script src="js/jquery.mobilemenu.js"></script>
-	<script src="js/bootstrap.min.js"></script> 
+	<script src="../js/jquery.min.js"></script> 
+	<script src="../js/jquery.mobilemenu.js"></script>
+	<script src="../js/bootstrap.min.js"></script> 
 </body>
 </html>

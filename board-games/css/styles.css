@@ -50,15 +50,10 @@ label.star:before {
   font-family: FontAwesome;
 }
 
-/* Place page */
+/* Place & Game page */
 #place-stars {font-size:35px;}
-.place-logo img {
-	border-radius: 8px;
-	max-width: 10%;
-    height: auto;
-}
-#button1, #button2 {display:inline-block;}
-#button1 a, #button2 a {color: #888888; font-size:20px;}
+#place-stars img{border-radius:8px; max-width:50%; height:auto;}
+#place-info a {text-decoration:none; color:#FFFFFF;}
 
 /* Games database on place page */
 #search-database {
@@ -91,8 +86,8 @@ label.star:before {
 .pagination .dots {background-color:#FFFFFF;}
 
 /* Login & registration page */
-#login, #registration {
-	background-color: #EAEAEA;
+#login input, #registration input {
+    border-color: #F2F2F2;
 }
 
 /* Login & registration icon */
@@ -114,3 +109,6 @@ label.star:before {
 .faicon-sign-in:hover .hidden-text {
     visibility: visible;
 }
+
+/* Footer */
+.row5{background-image:url("../img/background1.png")};

@@ -234,7 +234,7 @@ a{color:#CC827D;}
 hr, .borderedbox{border-color:#F2F2F2;}
 label span{color:#FF0000; background-color:inherit;}
 .overlay{background-color:rgba(0,0,0,.5);}
-.btn{color:#FFFFFF; background-color:#CC827D;}
+.btn{color:#FFFFFF; /*background-color:#CC827D;*/}
 
 
 /* Rows */
@@ -254,10 +254,11 @@ label span{color:#FF0000; background-color:inherit;}
 #topbar .faico li{border-color:#F2F2F2;}
 #topbar .faico a{color:inherit;}
 #topbar .faico a:hover{color:#FFFFFF;}
+#topbar .row .col-6 {padding-top:6px;}
 
 
 /* Header */
-#header #logo h1 a{color:inherit; background-color:inherit;}
+#header #logo h1 a{color:inherit; background-color:inherit;text-decoration: none;}
 #header input{color:inherit; background-color:#F2F2F2;}
 #header button{color:#FFFFFF; background-color:#CC827D;}
 
@@ -332,7 +333,7 @@ table a, #comments a{background-color:inherit;}
 }
 
 @media screen and (min-width:180px) and (max-width:900px) {
-	#topbar, #header, #mainav, #intro, #breadcrumb, .container, #footer, #copyright{max-width:95%;}
+	#topbar, #header, #mainav, #intro, #breadcrumb, .container, #footer, #copyright{max-width:90%;}
 
 	#topbar{padding:10px 0; text-align:center;}
 	#topbar .nospace.inline{margin-bottom:10px;}
@@ -358,7 +359,7 @@ table a, #comments a{background-color:inherit;}
 /* Max Wrapper Width
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:978px) {
-	#topbar, #header, #mainav, #intro, #breadcrumb, .container, #footer, #copyright{max-width:978px;}
+	#topbar, #header, #mainav, #intro, #breadcrumb, .container, #footer, #copyright{max-width:90%;}
 }
 
 
