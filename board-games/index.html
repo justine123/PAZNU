@@ -14,10 +14,10 @@ Licence URI: http://www.os-templates.com/template-terms
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title>Board games application</title>
-		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-		<link href="../css/layout.css" rel="stylesheet" type="text/css" media="all">
-		<link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
-		<link rel="shortcut icon" type="image/png" href="../img/icon.png"/>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+		<link rel="shortcut icon" type="image/png" href="img/icon.png"/>
 	</head>
 
 	<body id="top">
@@ -71,32 +71,116 @@ Licence URI: http://www.os-templates.com/template-terms
 		</header>
 	</div>
 	
+	<!-- Main page -->
+	<div class="wrapper">
+		<main class="container clear"> 
+			<div class="row justify-content-center"> 
+				<!-- Filtering places by given criteria -->
+				<div class="col-3"> 
+					<h2>Select a district:</h2>
+					<select name="nazwa">
+						<option disabled selected value>Select district...</option>
+						<option>Stare Miasto</option>
+						<option>Krowodrza</option>
+						<option>Nowa Huta</option>
+					</select> <br>
+						
+					<h2>Type of game:</h2>
+					<form action="">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="game-type">
+							<label class="form-check-label" for="game-type">Family games</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="game-type">
+							<label class="form-check-label" for="game-type">Party games</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="game-type">
+							<label class="form-check-label" for="game-type">Economy games</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="game-type">
+							<label class="form-check-label" for="game-type">Cooperation games</label>
+						</div>
+					</form> <br>
+					
+					<h2>Type of place:</h2>
+					<form action="">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="game-type">
+							<label class="form-check-label" for="game-type">Board games bar</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="game-type">
+							<label class="form-check-label" for="game-type">Board games rental</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="game-type">
+							<label class="form-check-label" for="game-type">Board games shop</label>
+						</div>
+					</form> <br>
+					
+					<button type="submit" class="btn btn-primary">Apply selection</button>
+				</div>
+				
+				<!-- Map of places with board games -->
+				<div class="col-6" id="index-map">
+					<figure>
+						<a href="pages/place.html"><img src="img/map.png" alt="Map of places with board games"></a>
+					</figure>
+				</div>
+			</div>
+		</main>
+    </div>
 	<!-- Search results page - TODO! -->
 	<div class="wrapper">
 	  <main class="container clear"> 
 		<div class="content"> 
 		  <div class="one_half first">
-		    <h2>Select a district:</h2>
-			  <select name="nazwa">
-	            <option>dzielnica 1</option>
-	            <option selected="selected">dzielnica 2<option>
-              </select>
-			<br>  
-			<h2>Type of the game:</h2>
-			  <form action="">
-				<input type="checkbox" name="vehicle" value="type1"> type 1<br>
-				<input type="checkbox" name="vehicle" value="type2" checked> type 2<br>
-				<input type="submit" value="Submit">
-			  </form>
+		    
 		  </div>
 		  <div class="one_half">
 			<figure>
-			  <img src="/img/map.png" alt="" style="width:600px;height:320px;" >
+			  
 			</figure>
 		  </div>
 		</div>
 		<div class="clear"></div>
 	  </main>
+	</div>
+	
+	<!-- Footer - Contact info --> 
+	<div class="wrapper row5 bgded">
+		<footer id="footer" class="clear"> 
+			<div class="row justify-content-center">
+				<div class="col-6">
+					<h6 class="title">Contact information:</h6>
+					<address class="btmspace-15">
+					Company Name<br>
+					Street Name &amp; Number<br>
+					Town<br>
+					Postcode/Zip
+					</address>
+					<ul class="nospace">
+					  <li class="btmspace-10"><span class="fa fa-phone"></span> +00 (123) 456 7890</li>
+					  <li><span class="fa fa-envelope-o"></span> info@domain.com</li>
+					</ul>
+				</div>
+				<div class="col-4">
+					<h6 class="title">Need more info? Contact us:</h6>
+					<form method="post" action="#">
+						<fieldset>
+							<legend>Newsletter:</legend>
+							<input class="btmspace-15" type="text" value="" placeholder="Name">
+							<input class="btmspace-15" type="text" value="" placeholder="Email">
+							<button type="submit" value="submit">Submit</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</footer>
+	  </div>
 	</div>
 	
 	<!-- Footer - Copyright --> 
@@ -116,8 +200,8 @@ Licence URI: http://www.os-templates.com/template-terms
 	</div>
 
 	<!-- Javascripts -->
-	<script src="../js/jquery.min.js"></script> 
-	<script src="../js/jquery.mobilemenu.js"></script>
-	<script src="../js/bootstrap.min.js"></script> 
+	<script src="js/jquery.min.js"></script> 
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script src="js/bootstrap.min.js"></script> 
 </body>
 </html>

@@ -71,75 +71,86 @@ Licence URI: http://www.os-templates.com/template-terms
 		</header>
 	</div>
 	
-	<!-- Search results page - TODO! -->
-<div class="wrapper">
+	<!-- Reservation page -->
+	<div class="wrapper">
 		<main class="container clear"> 
-			<!-- Login -->
-				<div class="login">
-				<h1>Reservation</h1>
-					<form method="post" action="../index.html">
-						<fieldset class="form-group">
-						  <div class="one_third first">
-							<label for="id_username" class="col-sm-3 control-label">Name</label>
-							<div class="col-sm-8">
-								<input type="text" name="username" value="" size="30" id="id_username"/>
+			<div class="row justify-content-center"> 
+				<div class="col-9" id="comments">
+					<h2>Reservation</h2>
+					<form action="../index.html" method="post">
+						<div class="form-row">
+							<div class="form-group col-4">
+								<label for="name">Name</label>
+								<input type="text" class="form-control" id="name" placeholder="Name">
 							</div>
-						  </div>
-						  <div class="one_third">
-							<label for="id_username" class="col-sm-3 control-label">Surname</label>
-							<div class="col-sm-8">
-								<input type="text" name="username" value="" size="30" id="id_username"/>
+							<div class="form-group col-4">
+								<label for="surname">Surname</label>
+								<input type="text" class="form-control" id="surname" placeholder="Surname">
 							</div>
-						  </div>
-						</fieldset>
-						<fieldset>
-						  <div class="one_third first">
-							<label for="id_password" class="col-sm-3 control-label">Number</label>
-							<div class="col-sm-4">
-								<input type="password" name="password" value="" size="30" id="id_password"/>
-							</div>
-						  </div>
-						  <div class="one_third">
-							<label for="id_password" class="col-sm-3 control-label">e-mail</label>
-							<div class="col-sm-4">
-								<input type="password" name="password" value="" size="30" id="id_password"/>
-							</div>
-						  </div>
-						</fieldset>
-						<fieldset>
-						  <div class="one_third first">
-			                </br>
-							<select name="nazwa">
-	                        <option>10-May-18</option>
-	                        <option selected="selected">11-May-18<option>
-                            </select>
-						  </div>
-						  <div class="one_third">
-						    <div class="one_third first">
-							  <label for="id_password" class="col-sm-3 control-label">Start time</label>
-							  <div class="col-sm-4">
-								  <input type="password" name="password" value="" size="10" id="id_password"/>
-							  </div>
-						    </div>
-						    <div class="one_third">
-							  <label for="id_password" class="col-sm-3 control-label">End time</label>
-							  <div class="col-sm-4">
-								  <input type="password" name="password" value="" size="10" id="id_password"/>
-							  </div>
-						    </div>							
-						  </div>
-						</fieldset>
-						<div class="col-sm-2">
-							<br />
-				            <button type="button add-opinion-button" id="button2"><a href="place.html">Send</a></button>
 						</div>
+						<div class="form-row">
+							<div class="form-group col-4">
+								<label for="phone">Phone number</label>
+								<input type="number" class="form-control" id="phone" placeholder="Phone number">
+							</div>
+							<div class="form-group col-4">
+								<label for="email">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="Email address">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-4">
+								<label class="control-label" for="date">Date</label>
+								<input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+							</div>
+							<div class="form-group col-2">
+								<label class="control-label" for="time">Start time</label>
+								<input class="form-control" id="time" name="time" placeholder="hh:mm" type="text"/>
+							</div>
+							<div class="form-group col-2">
+								<label class="control-label" for="time">End time</label>
+								<input class="form-control" id="time" name="time" placeholder="hh:mm" type="text"/>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary">Send</button>
 					</form>
 				</div>
-
-
-		
+			</div>
 		</main>
-    </div>
+	</div>
+	
+	<!-- Footer - Contact info --> 
+	<div class="wrapper row5 bgded">
+		<footer id="footer" class="clear"> 
+			<div class="row justify-content-center">
+				<div class="col-6">
+					<h6 class="title">Contact information:</h6>
+					<address class="btmspace-15">
+					Company Name<br>
+					Street Name &amp; Number<br>
+					Town<br>
+					Postcode/Zip
+					</address>
+					<ul class="nospace">
+					  <li class="btmspace-10"><span class="fa fa-phone"></span> +00 (123) 456 7890</li>
+					  <li><span class="fa fa-envelope-o"></span> info@domain.com</li>
+					</ul>
+				</div>
+				<div class="col-4">
+					<h6 class="title">Need more info? Contact us:</h6>
+					<form method="post" action="#">
+						<fieldset>
+							<legend>Newsletter:</legend>
+							<input class="btmspace-15" type="text" value="" placeholder="Name">
+							<input class="btmspace-15" type="text" value="" placeholder="Email">
+							<button type="submit" value="submit">Submit</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</footer>
+	  </div>
+	</div>
 	
 	<!-- Footer - Copyright --> 
 	<div class="wrapper row6">
@@ -161,5 +172,27 @@ Licence URI: http://www.os-templates.com/template-terms
 	<script src="../js/jquery.min.js"></script> 
 	<script src="../js/jquery.mobilemenu.js"></script>
 	<script src="../js/bootstrap.min.js"></script> 
+	
+	<!-- Bootstrap Date-Picker Plugin -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+	<!-- Script for choosing reservation date -->
+	<script>
+		$(document).ready(function(){
+			var date_input=$('input[name="date"]'); 
+			var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+			date_input.datepicker({
+				format: 'dd/mm/yyyy',
+				container: container,
+				todayHighlight: true,
+				autoclose: true,
+			})
+		})
+	</script>
+	
+	<!-- Script for choosing reservation time -->
+	<!-- TODO! -->
+	
 </body>
 </html>

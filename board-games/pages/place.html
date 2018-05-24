@@ -71,54 +71,132 @@ Licence URI: http://www.os-templates.com/template-terms
 		</header>
 	</div>
 	
-	<!-- Place info -->
+	<!-- Place info + games database -->
 	<div class="wrapper">
-	  <main class="container clear"> 
-		<div class="content" id="place"> 
-			<div class="block" id="place-stars">
-				Place name 
-				<!-- Stars rating -->
-				<div class="stars">
-				  <form action="">
-					<input class="star star-5" id="star-5" type="radio" name="star"/>
-					<label class="star star-5" for="star-5"></label>
-					<input class="star star-4" id="star-4" type="radio" name="star"/>
-					<label class="star star-4" for="star-4"></label>
-					<input class="star star-3" id="star-3" type="radio" name="star"/>
-					<label class="star star-3" for="star-3"></label>
-					<input class="star star-2" id="star-2" type="radio" name="star"/>
-					<label class="star star-2" for="star-2"></label>
-					<input class="star star-1" id="star-1" type="radio" name="star"/>
-					<label class="star star-1" for="star-1"></label>
-				  </form>
+		<main class="container clear"> 
+			<div class="row justify-content-center"> 	
+				<div class="col-4" id="place-stars">
+					Place name 
+					<!-- Stars rating -->
+					<div class="stars">
+						<form action="">
+							<input class="star star-5" id="star-5" type="radio" name="star"/>
+							<label class="star star-5" for="star-5"></label>
+							<input class="star star-4" id="star-4" type="radio" name="star"/>
+							<label class="star star-4" for="star-4"></label>
+							<input class="star star-3" id="star-3" type="radio" name="star"/>
+							<label class="star star-3" for="star-3"></label>
+							<input class="star star-2" id="star-2" type="radio" name="star"/>
+							<label class="star star-2" for="star-2"></label>
+							<input class="star star-1" id="star-1" type="radio" name="star"/>
+							<label class="star star-1" for="star-1"></label>
+						</form>
+					</div>
+					<br><br>
+					<img src="../img/icon.png" alt="Place logo">
 				</div>
-				<br><br>
+				
+				<div class="col-4" id="place-info">
+					<h2>Basic information:</h2>
+					<article> 
+						<ul>
+							<li>Company Name: The best bar in town</li>
+							<li>Street Name &amp; Number: Czarnowiejska 1/1</li>
+							<li>Town: Kraków</li>
+							<li>Opening hours: 12-24</li>	
+							<li>Opinions</li>
+								<ul>
+									<li>Great place, 5/5</li>
+									<li>Good place, 4/5</li>
+								</ul>
+						</ul>
+						<br>
+					</article>
+					<button type="submit" class="btn btn-primary"><a href="reservation.html">Reservation</a></button>
+					<button type="submit" class="btn btn-primary"><a href="add-opinion.html">Add Opinion</a></button>
+				</div>
+			</div> <br><br>
+			
+			<!-- Games database -->
+			<div class="row justify-content-center"> 
+				<div class="col-9">
+					<h2> Games database </h2>
+					<input type="text" id="search-database" placeholder="Search for games..." title="Search for games">
+					<!-- TODO: search and sort table using javascript -->
+					<table id="games-table">
+						<tr class="header">
+							<th>Name</th>
+							<th>Difficulty</th>
+							<th>Number of people</th>
+							<th>Time [hours]</th>
+							<th>Rating</th>
+						</tr>
+						<tr>
+							<td><a href="game.html">Game1</a></td>
+							<td>Easy</td>
+							<td>2-4</td>
+							<td>3</td>
+							<td>5.0</td>
+						</tr>
+						<tr>
+							<td><a href="game.html">Game2</a></td>
+							<td>Medium</td>
+							<td>2-4</td>
+							<td>2</td>
+							<td>5.0</td>
+						</tr>
+						<tr>
+							<td><a href="game.html">Game3</a></td>
+							<td>Difficult</td>
+							<td>1-5</td>
+							<td>5</td>
+							<td>4.5</td>
+						</tr>
+						<tr>
+							<td><a href="game.html">Game4</a></td>
+							<td>Easy</td>
+							<td>1-6</td>
+							<td>3</td>
+							<td>4.0</td>
+						</tr>
+					</table>
+				</div>
 			</div>
-			<div class="one_half first" id="place-logo">
-				<img src="../img/icon.png" alt="Place logo" style="border-radius:8px; max-width:50%; height:auto;">
-			</div>
-			<div class="one_half" id="place-info">
-				<h2>Basic information:</h2>
-				<article>
+		</main>
+	</div>
+	
+	<!-- Footer - Contact info --> 
+	<div class="wrapper row5 bgded">
+		<footer id="footer" class="clear"> 
+			<div class="row justify-content-center">
+				<div class="col-6">
+					<h6 class="title">Contact information:</h6>
+					<address class="btmspace-15">
 					Company Name<br>
 					Street Name &amp; Number<br>
 					Town<br>
-					Opening hours: 12-23 <br>
-					Opinions: 
-					<ul>
-						<li>Great place, 5/5</li>
-						<li>Good place, 4/5</li>
-					 </ul>
-					 <br/>
-				</article>
-				
-				<button type="button reservation-button" id="button1"><a href="reservation.html">Reservation</a></button>
-				<button type="button add-opinion-button" id="button2"><a href="add-opinion.html">Add Opinion</a></button>
+					Postcode/Zip
+					</address>
+					<ul class="nospace">
+					  <li class="btmspace-10"><span class="fa fa-phone"></span> +00 (123) 456 7890</li>
+					  <li><span class="fa fa-envelope-o"></span> info@domain.com</li>
+					</ul>
+				</div>
+				<div class="col-4">
+					<h6 class="title">Need more info? Contact us:</h6>
+					<form method="post" action="#">
+						<fieldset>
+							<legend>Newsletter:</legend>
+							<input class="btmspace-15" type="text" value="" placeholder="Name">
+							<input class="btmspace-15" type="text" value="" placeholder="Email">
+							<button type="submit" value="submit">Submit</button>
+						</fieldset>
+					</form>
+				</div>
 			</div>
-		</div>
-	  </main>
+		</footer>
+	  </div>
 	</div>
-	
 	
 	<!-- Footer - Copyright --> 
 	<div class="wrapper row6">

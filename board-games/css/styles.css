@@ -20,6 +20,7 @@ Authors: Justyna Handzlik, Marcin Soja
 #main-page input, #main-page button{border:none; border-radius:8px;}
 #main-page input{display:block; width:100%; padding:8px;}
 #main-page button{padding:6px 12px 8px; font-weight:bold; text-transform:uppercase; cursor:pointer;}
+#index-map {width:100%};
 
 /* Stars rating */
 div.stars {
