@@ -85,6 +85,7 @@ label.star:before {
 /* Search results page */
 .pagination a {background-color:#FFFFFF;}
 .pagination .dots {background-color:#FFFFFF;}
+#gallery figure li{margin-right:5%; float: left;}
 
 /* Login & registration page */
 #login input, #registration input {
