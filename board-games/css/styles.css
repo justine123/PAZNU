@@ -112,5 +112,8 @@ label.star:before {
     visibility: visible;
 }
 
+/* Add opinion - submit button */
+#add-opinion-button a{text-decoration:none; color:#FFFFFF;}
+
 /* Footer */
 .row5{background-image:url("../img/background1.png")};
